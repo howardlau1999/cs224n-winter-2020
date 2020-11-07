@@ -1,0 +1,7 @@
+test.gold.conll filter=lfs diff=lfs merge=lfs -text
+train.conll filter=lfs diff=lfs merge=lfs -text
+train.gold.conll filter=lfs diff=lfs merge=lfs -text
+dev.conll filter=lfs diff=lfs merge=lfs -text
+dev.gold.conll filter=lfs diff=lfs merge=lfs -text
+en-cw.txt filter=lfs diff=lfs merge=lfs -text
+test.conll filter=lfs diff=lfs merge=lfs -text
