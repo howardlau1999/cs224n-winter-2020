@@ -446,7 +446,7 @@ class NMT(nn.Module):
                 new_hyp_sent = hypotheses[prev_hyp_id] + [hyp_word]
                 if hyp_word == '</s>':
                     completed_hypotheses.append(Hypothesis(value=new_hyp_sent[1:-1],
-                                                           score=cand_new_hyp_score))
+                                                           score=cand_new_hyp_score / (len(new_hyp_sent) - 2)))
                 else:
                     new_hypotheses.append(new_hyp_sent)
                     live_hyp_ids.append(prev_hyp_id)
